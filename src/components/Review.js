@@ -67,7 +67,8 @@ const Review = () => {
    const { id, name, job, image, text } = reviews[current];
 
   return (
-    
+     <div className="container">
+      <h1 id="review-heading">Our Reviews</h1>
       <div className="review">
         <img src={image} alt={name} className="person-img" />
         <h2 className="author" id={`author-${id}`}>{name}</h2>
@@ -77,7 +78,7 @@ const Review = () => {
     <button className='next-btn' onClick={handleNext}>Next</button>
     <button className='random-btn' onClick={handleRandom}>surprise me</button>
       </div>
-         
+         </div>
     
     
   )
