@@ -67,19 +67,19 @@ const Review = () => {
    const { id, name, job, image, text } = reviews[current];
 
   return (
-    <div className='container'>
     
       <div className="review">
         <img src={image} alt={name} className="person-img" />
         <h2 className="author" id={`author-${id}`}>{name}</h2>
         <h4 className="job">{job}</h4>
         <p className="info">{text}</p>
-      </div>
-         
-    <button className='prev-btn' onClick={handlePrev}>Prev</button>
+        <button className='prev-btn' onClick={handlePrev}>Prev</button>
     <button className='next-btn' onClick={handleNext}>Next</button>
     <button className='random-btn' onClick={handleRandom}>surprise me</button>
-     </div>
+      </div>
+         
+    
+    
   )
 }
 
