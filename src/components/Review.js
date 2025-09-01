@@ -44,16 +44,14 @@ const Review = () => {
 
    const handlePrev=()=>{
     if(current==0){
-        alert("It cannot go to prev");
-        return;
+       setCurrent(0);
     }
     setCurrent(current-1);
    }
 
     const handleNext=()=>{
     if(current==reviews.length-1){
-        alert("It cannot go to next");
-        return;
+        setCurrent(0);
     }
     setCurrent(current+1);
    }
