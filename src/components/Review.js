@@ -44,8 +44,7 @@ const Review = () => {
 
    const handlePrev=()=>{
     if(current==0){
-        alert("It cannot go to prev");
-        return;
+       setCurrent(reviews.length-1);
     }
     setCurrent(current-1);
    }
