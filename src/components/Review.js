@@ -44,16 +44,16 @@ const Review = () => {
 
    const handlePrev=()=>{
     if(current==0){
-       setCurrent(reviews.length-1);
+       return setCurrent(reviews.length-1);
     }
-    setCurrent(current-1);
+    return setCurrent(current-1);
    }
 
     const handleNext=()=>{
     if(current==reviews.length-1){
-       setCurrent(0);
+       return setCurrent(0);
     }
-    setCurrent(current+1);
+    return setCurrent(current+1);
    }
    const handleRandom = () => {
     let num;
